@@ -1,9 +1,9 @@
 {
-  "name": "electron-boilerplate-vue",
-  "productName": "Electron Boilerplate Vue",
+  "name": "contacts",
+  "productName": "Contacts",
   "version": "0.1.0",
   "description": "An Electron + Vue.js project.",
-  "author": "Brad Stewart <me@bradstewart.co>",
+  "author": "Jake Humphrey <jakehumphrey18@gmail.com>",
   "main": "background.js",
   "dependencies": {
     "jquery": "2.2.2"

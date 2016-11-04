@@ -3,6 +3,7 @@
 // It doesn't have any windows which you can see on screen, but we can open
 // window from here.
 
+global.localStorage = require('localStorage')
 import { app, BrowserWindow } from 'electron'
 import path from 'path'
 

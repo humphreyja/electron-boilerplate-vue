@@ -4,6 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 var webpackBaseConfig = require('./webpack.base.conf')
 var config = require('../config')
 var cssLoaders = require('./css-loaders')
+var WebpackNotifierPlugin = require('webpack-notifier')
 
 var devServerUrl = 'http://localhost:' + config.dev.port + '/'
 
@@ -39,6 +40,7 @@ var webpackConfig = merge(webpackBaseConfig, {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
+    new WebpackNotifierPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: 'main.html',
@@ -64,5 +66,4 @@ if (config.dev.vueDevTools) {
   }))
 }
 
-module.exports = webpackConfig 
-
+module.exports = webpackConfig
